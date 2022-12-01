@@ -1,0 +1,69 @@
+:root {
+    --compPink: rgb(196, 82, 167);
+    --compBR: 10px;
+}
+
+body {
+    box-sizing: border-box;
+    background-color: rgb(39, 39, 39);
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+header {
+    text-align: center;
+    display: flex;
+    display: block;
+    user-select: all;
+}
+
+h1  {
+    color: var(--compPink);
+    font-size: 300%;
+}
+
+header p {
+    color: white;
+    font-size: 16px;
+    width: 800px;
+    margin: 0 auto;
+    
+}
+
+.main {
+    margin: 0px 5%;
+    display: grid;
+    grid-template-rows: 35% 65%;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "fbr fbc grl"
+    "lng btrans ovrlay";
+    justify-content: center;
+    align-items: center;
+}
+
+main section {
+    text-align: center;
+}
+
+#flexbox-row {
+    grid-area: fbr;
+}
+#flexbox-col {
+    grid-area: fbc;
+}
+#grid-layout {
+    grid-area: grl;
+}
+#linear-grad {
+    grid-area: lng;
+}
+#box-trans {
+    grid-area: btrans;
+}
+#overlay {
+    grid-area: ovrlay;
+}
+
+.card {
+display: grid;
+}
